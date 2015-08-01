@@ -39,6 +39,7 @@ class IdGenerator:
 
     @staticmethod
     def generate_id():
+        # some random business logic to create an order id
         sequence_number = IdGenerator.ATOMIC_LONG.increment_and_get()
         first_day = date(date.today().year, 1, 1)
         today = date.today()
